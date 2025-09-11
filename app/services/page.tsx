@@ -257,7 +257,7 @@ export default function ServicesPage() {
                 <Button size="lg" className="bg-brand-500 hover:bg-brand-600 text-white" asChild>
                   <Link href="/book">Book a Demo</Link>
                 </Button>
-                <Button size="lg" variant="outline" asChild>
+                <Button size="lg" className="bg-brand-500 hover:bg-brand-600 text-white" asChild>
                   <Link href="/contact">Contact Us</Link>
                 </Button>
               </div>
@@ -323,7 +323,7 @@ function ServiceCard({ service, index }: { service: typeof services[0], index: n
         </div>
         
         <div className="mt-6 pt-4 border-t border-gray-200">
-          <Button variant="outline" className="w-full" asChild>
+          <Button className="w-full bg-brand-500 hover:bg-brand-600 text-white" asChild>
             <Link href={`/services/${service.id}`}>Learn more</Link>
           </Button>
         </div>

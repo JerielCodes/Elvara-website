@@ -257,7 +257,7 @@ export default function BookingSystemPage() {
                 <Button size="lg" className="bg-brand-500 hover:bg-brand-600 text-white" asChild>
                   <Link href="/book">Book a Demo</Link>
                 </Button>
-                <Button size="lg" variant="outline" asChild>
+                <Button size="lg" className="bg-brand-500 hover:bg-brand-600 text-white" asChild>
                   <Link href="/contact">Contact Us</Link>
                 </Button>
               </div>
