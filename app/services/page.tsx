@@ -274,7 +274,7 @@ export default function ServicesPage() {
 function ServiceCard({ service, index }: { service: typeof services[0], index: number }) {
 
   return (
-    <Card className="h-full flex flex-col hover:shadow-lg transition-shadow">
+    <Card className="h-full flex flex-col hover:shadow-lg transition-shadow bg-white">
       <CardHeader>
         <div className="flex items-center space-x-3 mb-4">
           <div className="p-2 bg-brand-green/10 rounded-lg">

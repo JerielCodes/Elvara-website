@@ -61,7 +61,7 @@ export default function LeadGenerationPage() {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {whatsIncluded.map((item, index) => (
-                <Card key={index} className="text-center">
+                <Card key={index} className="text-center bg-white">
                   <CardContent className="p-6">
                     <Check className="h-8 w-8 text-brand-green mx-auto mb-4" />
                     <p className="text-sm text-gray-700">{item}</p>
@@ -79,7 +79,7 @@ export default function LeadGenerationPage() {
               <p className="text-xl text-gray-600 max-w-2xl mx-auto">Starting at $399/month for comprehensive lead generation</p>
             </div>
             <div className="max-w-2xl mx-auto">
-              <Card>
+              <Card className="bg-white">
                 <CardHeader className="text-center">
                   <CardTitle className="text-2xl">Lead Generation</CardTitle>
                   <div className="text-4xl font-bold text-brand-green">Starting at $399/month</div>

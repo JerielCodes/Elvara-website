@@ -91,7 +91,7 @@ export default function BookingSystemPage() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {whatsIncluded.map((item, index) => (
-                <Card key={index} className="text-center">
+                <Card key={index} className="text-center bg-white">
                   <CardContent className="p-6">
                     <Check className="h-8 w-8 text-brand-green mx-auto mb-4" />
                     <p className="text-sm text-gray-700">{item}</p>
@@ -116,7 +116,7 @@ export default function BookingSystemPage() {
 
             <div className="max-w-4xl mx-auto">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <Card>
+                <Card className="bg-white">
                   <CardHeader className="text-center">
                     <CardTitle className="text-xl">One-time Setup</CardTitle>
                     <div className="text-3xl font-bold text-brand-green">Contact for quote</div>
@@ -144,7 +144,7 @@ export default function BookingSystemPage() {
                   </CardContent>
                 </Card>
 
-                <Card>
+                <Card className="bg-white">
                   <CardHeader className="text-center">
                     <CardTitle className="text-xl">Monthly Maintenance</CardTitle>
                     <div className="text-3xl font-bold text-brand-green">Contact for quote</div>

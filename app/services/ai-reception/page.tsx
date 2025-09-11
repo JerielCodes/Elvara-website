@@ -129,7 +129,7 @@ export default function AIReceptionPage() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {whatsIncluded.map((item, index) => (
-                <Card key={index} className="text-center">
+                <Card key={index} className="text-center bg-white">
                   <CardContent className="p-6">
                     <Check className="h-8 w-8 text-brand-green mx-auto mb-4" />
                     <p className="text-sm text-gray-700">{item}</p>
@@ -154,7 +154,7 @@ export default function AIReceptionPage() {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
               {pricingDetails.map((plan, index) => (
-                <Card key={index} className={`${index === 1 ? 'ring-2 ring-brand-green' : ''}`}>
+                <Card key={index} className={`bg-white ${index === 1 ? 'ring-2 ring-brand-green' : ''}`}>
                   <CardHeader className="text-center">
                     <CardTitle className="text-xl">{plan.plan}</CardTitle>
                     <div className="text-3xl font-bold text-brand-green">{plan.price}</div>
