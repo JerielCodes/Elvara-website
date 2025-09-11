@@ -44,12 +44,12 @@ const faqs = [
     answer: 'Yes, we work with businesses nationwide. Our local SEO strategies are tailored to your specific market and competition.'
   },
   {
-    question: 'What's included in monthly reporting?',
+    question: "What's included in monthly reporting?",
     answer: 'Monthly reports include keyword rankings, website traffic, local search visibility, review performance, and actionable recommendations.'
   },
   {
     question: 'Can you help with existing websites?',
-    answer: 'Absolutely! We can audit and optimize existing websites, or help with new website development that\'s SEO-optimized from the start.'
+    answer: "Absolutely! We can audit and optimize existing websites, or help with new website development that's SEO-optimized from the start."
   }
 ];
 

@@ -82,7 +82,7 @@ const faqs = [
     answer: 'Yes, the AI integrates seamlessly with Google Calendar, Outlook, and most major calendar systems. It can check availability and book appointments in real-time.'
   },
   {
-    question: 'What happens if the AI can\'t answer a question?',
+    question: "What happens if the AI can't answer a question?",
     answer: 'The AI is designed to gracefully handle unknown questions by taking detailed messages, offering to have someone call back, or transferring to your team when appropriate.'
   },
   {
