@@ -95,10 +95,10 @@ const pricingTiers = [
     popular: false,
   },
   {
-    name: 'Elite',
+    name: 'Partner Plan',
     price: 2000,
     period: '+/month',
-    description: 'Enterprise-level growth systems with custom solutions',
+    description: 'Co-building relationship across services to drive growth',
     badge: 'Custom',
     features: [
       'Everything in Premium',
@@ -226,7 +226,7 @@ export default function PricingTiers({ showDetailed = false }: PricingTiersProps
               )}
               asChild
             >
-              <Link href={tier.name === 'Elite' ? '/contact' : '/book'}>
+              <Link href={tier.name === 'Partner Plan' ? '/contact' : '/book'}>
                 {tier.ctaText}
               </Link>
             </Button>

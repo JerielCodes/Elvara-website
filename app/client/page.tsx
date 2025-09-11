@@ -146,12 +146,12 @@ export default function ClientPage() {
                           item.type === 'booking' ? 'bg-green-100' :
                           item.type === 'call' ? 'bg-blue-100' :
                           item.type === 'social' ? 'bg-purple-100' :
-                          item.type === 'seo' ? 'bg-yellow-100' : 'bg-gray-100'
+                          item.type === 'seo' ? 'bg-brand-green/10' : 'bg-gray-100'
                         }`}>
                           {item.type === 'booking' && <Calendar className="h-4 w-4 text-green-600" />}
                           {item.type === 'call' && <Phone className="h-4 w-4 text-blue-600" />}
                           {item.type === 'social' && <MessageSquare className="h-4 w-4 text-purple-600" />}
-                          {item.type === 'seo' && <TrendingUp className="h-4 w-4 text-yellow-600" />}
+                          {item.type === 'seo' && <TrendingUp className="h-4 w-4 text-brand-green" />}
                           {item.type === 'marketing' && <Users className="h-4 w-4 text-gray-600" />}
                         </div>
                         <div className="flex-1">

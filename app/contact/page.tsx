@@ -28,7 +28,7 @@ const contactInfo = [
   {
     icon: <MapPin className="h-6 w-6 text-brand-green" />,
     title: 'Location',
-    details: 'San Francisco, CA',
+    details: 'Philadelphia, PA',
     subtitle: 'Serving businesses nationwide',
   },
   {

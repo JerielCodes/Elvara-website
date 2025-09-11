@@ -1,31 +1,25 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Star, Quote } from 'lucide-react';
+import { Phone, Calendar, TrendingUp } from 'lucide-react';
 import AnimatedSection from '@/components/ui/animated-section';
 import SectionContainer from '@/components/ui/section-container';
 
-const testimonials = [
+const outcomes = [
   {
-    name: 'Sarah Johnson',
-    business: 'Bloom Beauty Salon',
-    rating: 5,
-    text: 'Elvara transformed our business. We\'ve seen 40% more bookings and our phone never goes unanswered.',
-    image: 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop',
+    icon: <Phone className="h-8 w-8 text-brand-green" />,
+    title: 'Fewer missed calls → more booked appointments',
+    description: 'AI reception ensures every call is answered professionally, capturing more opportunities for your business.',
   },
   {
-    name: 'Mike Rodriguez',
-    business: 'Rodriguez Construction',
-    rating: 5,
-    text: 'The SEO and lead generation has been incredible. We\'re booked solid for the next 3 months.',
-    image: 'https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop',
+    icon: <Calendar className="h-8 w-8 text-brand-green" />,
+    title: 'Automated reminders & follow-ups → fewer no-shows',
+    description: 'Smart booking systems with automated reminders reduce no-shows and keep your schedule full.',
   },
   {
-    name: 'Dr. Emily Chen',
-    business: 'Chen Family Dentistry',
-    rating: 5,
-    text: 'Our patient scheduling is seamless now. Elvara handles everything so we can focus on patient care.',
-    image: 'https://images.pexels.com/photos/5215024/pexels-photo-5215024.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop',
+    icon: <TrendingUp className="h-8 w-8 text-brand-green" />,
+    title: 'Clear ROI view → time & cost you actually save',
+    description: 'Comprehensive analytics show exactly how our systems save you time and money while driving growth.',
   },
 ];
 
@@ -56,47 +50,38 @@ export default function ProofSection() {
           </div>
         </div>
 
-        {/* Testimonials */}
+        {/* What You'll Get */}
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Growing businesses every day
+            What you'll get
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            See how local businesses are scaling with Elvara's growth systems
+            Real outcomes that transform how your business operates
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {testimonials.map((testimonial, index) => (
+          {outcomes.map((outcome, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: index * 0.2 }}
-              className="bg-white rounded-lg p-6 shadow-lg border border-gray-100"
+              className="bg-white rounded-lg p-6 shadow-lg border border-gray-100 text-center"
             >
-              <div className="flex items-center mb-4">
-                {[...Array(testimonial.rating)].map((_, i) => (
-                  <Star key={i} className="h-5 w-5 text-yellow-400 fill-current" />
-                ))}
+              <div className="mb-4 inline-flex items-center justify-center p-4 bg-brand-green/10 rounded-full">
+                {outcome.icon}
               </div>
-              <div className="relative mb-4">
-                <Quote className="h-8 w-8 text-brand-green/20 absolute -top-2 -left-2" />
-                <p className="text-gray-700 relative z-10 pl-6">{testimonial.text}</p>
-              </div>
-              <div className="flex items-center">
-                <img
-                  src={testimonial.image}
-                  alt={testimonial.name}
-                  className="w-12 h-12 rounded-full mr-4"
-                />
-                <div>
-                  <p className="font-semibold text-gray-900">{testimonial.name}</p>
-                  <p className="text-sm text-gray-600">{testimonial.business}</p>
-                </div>
-              </div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">{outcome.title}</h3>
+              <p className="text-gray-600">{outcome.description}</p>
             </motion.div>
           ))}
+        </div>
+
+        <div className="text-center mt-12">
+          <p className="text-gray-600 max-w-3xl mx-auto">
+            We'll tailor outcomes to your business and back them up with real data—ask us for sources once we've scoped your setup.
+          </p>
         </div>
       </AnimatedSection>
     </SectionContainer>

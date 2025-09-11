@@ -72,7 +72,7 @@ export default function PricingPage() {
                     <th className="px-6 py-4 text-center text-sm font-semibold text-gray-900">Starter</th>
                     <th className="px-6 py-4 text-center text-sm font-semibold text-gray-900 bg-brand-green/10">Growth</th>
                     <th className="px-6 py-4 text-center text-sm font-semibold text-gray-900">Premium</th>
-                    <th className="px-6 py-4 text-center text-sm font-semibold text-gray-900">Elite</th>
+                    <th className="px-6 py-4 text-center text-sm font-semibold text-gray-900">Partner Plan</th>
                   </tr>
                 </thead>
                 <tbody>

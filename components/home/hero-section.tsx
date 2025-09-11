@@ -52,7 +52,7 @@ export default function HeroSection() {
           <Button size="lg" className="bg-white text-brand-green hover:bg-white/90 text-lg px-8" asChild>
             <Link href="/book">Book a Demo</Link>
           </Button>
-          <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-brand-green text-lg px-8" asChild>
+          <Button size="lg" className="bg-white text-brand-green hover:bg-white/90 text-lg px-8" asChild>
             <Link href="/pricing">See Plans</Link>
           </Button>
         </motion.div>

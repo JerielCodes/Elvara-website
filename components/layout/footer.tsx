@@ -3,11 +3,11 @@ import { Sprout, Mail, Phone, MapPin } from 'lucide-react';
 
 const footerLinks = {
   services: [
-    { name: 'AI Reception', href: '#' },
-    { name: 'Booking System', href: '#' },
-    { name: 'SEO Services', href: '#' },
-    { name: 'Social Media', href: '#' },
-    { name: 'Analytics', href: '#' },
+    { name: 'AI Reception', href: '/services/ai-reception' },
+    { name: 'Booking System', href: '/services/booking-system' },
+    { name: 'SEO Services', href: '/services/seo' },
+    { name: 'Social Media', href: '/services/social-media' },
+    { name: 'Analytics', href: '/services/analytics-dashboards' },
   ],
   industries: [
     { name: 'Salons', href: '/industries/salons' },
@@ -41,7 +41,7 @@ export default function Footer() {
               <span className="text-xl font-bold text-white">Elvara</span>
             </Link>
             <p className="text-gray-400 mb-6 max-w-md">
-              Our mission is growth. We handle the systems and strategies that move your business forward.
+              We build the systems behind your growth—so you can focus on serving clients.
             </p>
             <div className="space-y-2">
               <div className="flex items-center space-x-2">
@@ -54,7 +54,7 @@ export default function Footer() {
               </div>
               <div className="flex items-center space-x-2">
                 <MapPin className="h-4 w-4 text-brand-green" />
-                <span className="text-sm">San Francisco, CA</span>
+                <span className="text-sm">Philadelphia, PA</span>
               </div>
             </div>
           </div>

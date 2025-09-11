@@ -8,29 +8,24 @@ import { Calendar, Clock, Users, CheckCircle } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Book a Demo',
-  description: 'Schedule a personalized demo of Elvara\'s growth systems. See how we can help scale your local business.',
+  description: 'Schedule a free consultation to discuss your business growth needs and see how Elvara can help you scale.',
 };
 
-const demoFeatures = [
+const demoBenefits = [
   {
     icon: <Calendar className="h-6 w-6 text-brand-green" />,
-    title: '30-Minute Consultation',
-    description: 'Personalized demo tailored to your business needs',
-  },
-  {
-    icon: <Clock className="h-6 w-6 text-brand-green" />,
-    title: 'Same-Day Availability',
-    description: 'Flexible scheduling to fit your busy schedule',
+    title: '30-minute consultation',
+    description: 'Focused discussion about your business goals and challenges',
   },
   {
     icon: <Users className="h-6 w-6 text-brand-green" />,
-    title: 'Expert Guidance',
-    description: 'Speak directly with our growth specialists',
+    title: 'Custom growth plan',
+    description: 'Personalized recommendations for your specific business needs',
   },
   {
     icon: <CheckCircle className="h-6 w-6 text-brand-green" />,
-    title: 'Custom Strategy',
-    description: 'Get a preliminary growth plan for your business',
+    title: 'No commitment required',
+    description: 'Free consultation with no pressure to purchase anything',
   },
 ];
 
@@ -43,142 +38,98 @@ export default function BookPage() {
         {/* Hero */}
         <SectionContainer background="gradient" size="default">
           <div className="text-center text-white">
+            <div className="inline-flex items-center justify-center p-4 mb-8 bg-white/20 backdrop-blur-sm rounded-full">
+              <Calendar className="h-12 w-12 text-white" />
+            </div>
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              See Elvara in action
+              Book a Demo
             </h1>
-            <p className="text-xl text-white/90 max-w-2xl mx-auto">
-              Book a personalized demo and discover how our growth systems can transform your business
+            <p className="text-xl text-white/90 max-w-2xl mx-auto mb-8">
+              Schedule a free consultation to discuss your business growth needs and see how Elvara can help you scale.
             </p>
           </div>
         </SectionContainer>
 
-        {/* Booking Section */}
+        {/* Demo Benefits */}
         <SectionContainer background="default">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
-            {/* Booking Embed */}
-            <div className="lg:col-span-2">
-              <AnimatedSection>
-                <Card className="shadow-lg min-h-[600px]">
-                  <CardHeader className="bg-gray-50 border-b">
-                    <CardTitle className="text-2xl text-gray-900 text-center">
-                      Schedule Your Demo
-                    </CardTitle>
-                    <p className="text-gray-600 text-center">
-                      Choose a time that works best for you
-                    </p>
-                  </CardHeader>
-                  <CardContent className="p-0">
-                    {/* Placeholder for booking embed */}
-                    <div className="h-[500px] flex items-center justify-center bg-gray-50 border-2 border-dashed border-gray-300 rounded-b-lg">
-                      <div className="text-center">
-                        <Calendar className="h-12 w-12 text-gray-400 mx-auto mb-4" />
-                        <p className="text-lg font-medium text-gray-600 mb-2">Booking Calendar Integration</p>
-                        <p className="text-sm text-gray-500">
-                          Connect your preferred booking system here<br />
-                          (Calendly, Acuity, or custom solution)
-                        </p>
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
-              </AnimatedSection>
-            </div>
-
-            {/* Demo Info */}
-            <div>
-              <AnimatedSection delay={0.2}>
-                <div className="space-y-6">
-                  <div>
-                    <h2 className="text-2xl font-bold text-gray-900 mb-4">
-                      What to expect
-                    </h2>
-                    <p className="text-gray-600">
-                      During your demo, we'll show you exactly how Elvara can help grow your business with our comprehensive suite of tools.
-                    </p>
-                  </div>
-
-                  {demoFeatures.map((feature, index) => (
-                    <Card key={index} className="hover:shadow-md transition-shadow">
-                      <CardContent className="p-4">
-                        <div className="flex items-start space-x-3">
-                          <div className="p-2 bg-brand-green/10 rounded-lg">
-                            {feature.icon}
-                          </div>
-                          <div>
-                            <h3 className="font-semibold text-gray-900">{feature.title}</h3>
-                            <p className="text-sm text-gray-600">{feature.description}</p>
-                          </div>
-                        </div>
-                      </CardContent>
-                    </Card>
-                  ))}
-
-                  <Card className="bg-brand-green/5 border-brand-green/20">
-                    <CardContent className="p-4">
-                      <h3 className="font-semibold text-gray-900 mb-2">
-                        Demo Agenda
-                      </h3>
-                      <ul className="space-y-1 text-sm text-gray-700">
-                        <li>• Business assessment (5 min)</li>
-                        <li>• AI reception demo (10 min)</li>
-                        <li>• Growth systems overview (10 min)</li>
-                        <li>• Custom strategy discussion (5 min)</li>
-                      </ul>
-                    </CardContent>
-                  </Card>
-
-                  <Card className="bg-gray-900 text-white">
-                    <CardContent className="p-4">
-                      <h3 className="font-semibold mb-2">
-                        Questions about the demo?
-                      </h3>
-                      <p className="text-sm text-gray-300 mb-3">
-                        Reach out to our team for immediate assistance.
-                      </p>
-                      <div className="space-y-2 text-sm">
-                        <div>📧 hello@elvara.com</div>
-                        <div>📞 1-800-ELVARA</div>
-                      </div>
-                    </CardContent>
-                  </Card>
-                </div>
-              </AnimatedSection>
-            </div>
-          </div>
-        </SectionContainer>
-
-        {/* What Happens Next */}
-        <SectionContainer background="gray">
           <AnimatedSection>
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                What happens after you book?
+                What to expect
               </h2>
+              <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+                A focused conversation about your business and how we can help you grow
+              </p>
             </div>
-            
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-              <div className="text-center">
-                <div className="w-16 h-16 bg-brand-green rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl font-bold text-white">1</span>
-                </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">Preparation</h3>
-                <p className="text-gray-600">We'll send you a brief questionnaire to understand your business better</p>
-              </div>
-              
-              <div className="text-center">
-                <div className="w-16 h-16 bg-brand-green rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl font-bold text-white">2</span>
-                </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">Demo Call</h3>
-                <p className="text-gray-600">Personalized 30-minute demo showing how Elvara works for your industry</p>
-              </div>
-              
-              <div className="text-center">
-                <div className="w-16 h-16 bg-brand-green rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl font-bold text-white">3</span>
-                </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">Next Steps</h3>
-                <p className="text-gray-600">Receive a custom growth plan and guidance on implementation</p>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+              {demoBenefits.map((benefit, index) => (
+                <Card key={index} className="text-center">
+                  <CardContent className="p-6">
+                    <div className="mb-4 inline-flex items-center justify-center p-3 bg-brand-green/10 rounded-full">
+                      {benefit.icon}
+                    </div>
+                    <h3 className="text-lg font-semibold text-gray-900 mb-2">{benefit.title}</h3>
+                    <p className="text-gray-600">{benefit.description}</p>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </AnimatedSection>
+        </SectionContainer>
+
+        {/* Cal.com Embed */}
+        <SectionContainer background="gray">
+          <AnimatedSection>
+            <div className="max-w-4xl mx-auto">
+              <Card className="shadow-lg">
+                <CardHeader className="text-center">
+                  <CardTitle className="text-2xl text-gray-900">Schedule Your Demo</CardTitle>
+                  <p className="text-gray-600">
+                    Choose a time that works for you. We'll send you a calendar invite with meeting details.
+                  </p>
+                </CardHeader>
+                <CardContent className="p-0">
+                  <div className="rounded-lg overflow-hidden">
+                    <iframe
+                      src="https://cal.com/YOUR_CAL_USERNAME/demo"
+                      width="100%"
+                      height="600"
+                      frameBorder="0"
+                      className="rounded-lg"
+                      title="Book a Demo"
+                    />
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+          </AnimatedSection>
+        </SectionContainer>
+
+        {/* Alternative Contact */}
+        <SectionContainer background="default">
+          <AnimatedSection>
+            <div className="text-center">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                Prefer to talk first?
+              </h2>
+              <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+                Give us a call or send us an email to discuss your needs before scheduling a demo.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <a
+                  href="tel:1-800-ELVARA"
+                  className="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-brand-green hover:bg-brand-green-dark transition-colors"
+                >
+                  <Clock className="h-5 w-5 mr-2" />
+                  Call 1-800-ELVARA
+                </a>
+                <a
+                  href="mailto:hello@elvara.com"
+                  className="inline-flex items-center justify-center px-8 py-3 border border-gray-300 text-base font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 transition-colors"
+                >
+                  Email Us
+                </a>
               </div>
             </div>
           </AnimatedSection>
