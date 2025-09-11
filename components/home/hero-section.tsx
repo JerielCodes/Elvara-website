@@ -49,10 +49,10 @@ export default function HeroSection() {
           transition={{ duration: 0.6, delay: 0.8 }}
           className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12"
         >
-          <Button size="lg" className="bg-white text-brand-green hover:bg-white/90 text-lg px-8" asChild>
+          <Button size="lg" className="bg-brand-500 hover:bg-brand-600 text-white text-lg px-8" asChild>
             <Link href="/book">Book a Demo</Link>
           </Button>
-          <Button size="lg" className="bg-white text-brand-green hover:bg-white/90 text-lg px-8" asChild>
+          <Button size="lg" className="bg-brand-500 hover:bg-brand-600 text-white text-lg px-8" asChild>
             <Link href="/pricing">See Plans</Link>
           </Button>
         </motion.div>

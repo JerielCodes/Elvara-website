@@ -47,7 +47,7 @@ export default function CustomAutomationsPage() {
             <p className="text-xl text-white/90 max-w-2xl mx-auto mb-8">
               Streamline your business processes with custom automation workflows that save time and reduce errors.
             </p>
-            <Button size="lg" className="bg-white text-brand-green hover:bg-white/90" asChild>
+            <Button size="lg" className="bg-brand-500 hover:bg-brand-600 text-white" asChild>
               <Link href="/book">Book a Demo</Link>
             </Button>
           </div>
@@ -131,7 +131,7 @@ export default function CustomAutomationsPage() {
                 Book a demo to discuss your automation needs and get a custom quote.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button size="lg" className="bg-white text-brand-green hover:bg-white/90" asChild>
+                <Button size="lg" className="bg-brand-500 hover:bg-brand-600 text-white" asChild>
                   <Link href="/book">Book a Demo</Link>
                 </Button>
                 <Button size="lg" variant="outline" asChild>

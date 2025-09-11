@@ -123,7 +123,7 @@ export default function IndustriesPage() {
               <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
                 We work with all types of local businesses. Let's discuss how our growth systems can be customized for your specific industry.
               </p>
-              <Button size="lg" className="bg-white text-brand-green hover:bg-white/90" asChild>
+              <Button size="lg" className="bg-brand-500 hover:bg-brand-600 text-white" asChild>
                 <Link href="/contact">Contact Us</Link>
               </Button>
             </div>

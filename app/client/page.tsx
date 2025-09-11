@@ -83,7 +83,7 @@ export default function ClientPage() {
               </p>
               <Button 
                 size="lg" 
-                className="bg-white text-brand-green hover:bg-white/90 mr-4"
+                className="bg-brand-500 hover:bg-brand-600 text-white mr-4"
                 onClick={() => setIsAuthenticated(true)}
               >
                 Preview Dashboard

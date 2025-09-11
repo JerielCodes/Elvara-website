@@ -52,6 +52,17 @@ const config: Config = {
         },
         // Elvara brand colors
         brand: {
+          50:  "#f0fdf4",
+          100: "#dcfce7",
+          200: "#bbf7d0",
+          300: "#86efac",
+          400: "#4ade80",
+          500: "#22c55e",   // primary
+          600: "#16a34a",   // hover
+          700: "#15803d",
+          800: "#166534",
+          900: "#14532d",
+          // Legacy support
           green: '#43A047',
           'green-light': '#66BB6A',
           'green-dark': '#388E3C',

@@ -39,7 +39,7 @@ export default function PricingPage() {
             <p className="text-xl text-white/90 max-w-2xl mx-auto mb-8">
               Every plan builds into a comprehensive growth system. Start where you are, scale as you grow.
             </p>
-            <Button size="lg" className="bg-white text-brand-green hover:bg-white/90" asChild>
+            <Button size="lg" className="bg-brand-500 hover:bg-brand-600 text-white" asChild>
               <Link href="/book">Book a Demo to Get Started</Link>
             </Button>
           </div>
@@ -133,7 +133,7 @@ export default function PricingPage() {
               <p className="text-gray-600 mb-6">
                 Not sure which plan is right for you?
               </p>
-              <Button size="lg" className="bg-white text-brand-green hover:bg-white/90" asChild>
+              <Button size="lg" className="bg-brand-500 hover:bg-brand-600 text-white" asChild>
                 <Link href="/book">Schedule a Free Consultation</Link>
               </Button>
             </div>
