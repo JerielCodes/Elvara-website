@@ -187,7 +187,7 @@ export default function IndustryPage({ params }: PageProps) {
                 {industry.hero.subtitle}
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button size="lg" asChild>
+                <Button size="lg" className="bg-white text-brand-green hover:bg-white/90" asChild>
                   <Link href="/book">Book a Demo</Link>
                 </Button>
                 <Button size="lg" variant="outline" asChild>

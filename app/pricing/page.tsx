@@ -133,7 +133,7 @@ export default function PricingPage() {
               <p className="text-gray-600 mb-6">
                 Not sure which plan is right for you?
               </p>
-              <Button size="lg" asChild>
+              <Button size="lg" className="bg-white text-brand-green hover:bg-white/90" asChild>
                 <Link href="/book">Schedule a Free Consultation</Link>
               </Button>
             </div>

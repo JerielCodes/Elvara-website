@@ -65,7 +65,7 @@ export default function Home() {
             </div>
             <PricingTiers showDetailed={true} />
             <div className="text-center mt-12">
-              <Button size="lg" asChild>
+              <Button size="lg" className="bg-white text-brand-green hover:bg-white/90" asChild>
                 <Link href="/pricing">View Full Pricing Details</Link>
               </Button>
             </div>

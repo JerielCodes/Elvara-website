@@ -171,7 +171,7 @@ export default function AboutPage() {
                 </p>
               </div>
               <div className="mt-12">
-                <Button size="lg" asChild>
+                <Button size="lg" className="bg-white text-brand-green hover:bg-white/90" asChild>
                   <Link href="/book">Partner with us for growth</Link>
                 </Button>
               </div>
