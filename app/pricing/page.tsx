@@ -80,20 +80,48 @@ export default function PricingPage() {
                     <tr key={index} className="border-b border-gray-100">
                       <td className="px-6 py-4 text-sm font-medium text-gray-900">{row.feature}</td>
                       <td className="px-6 py-4 text-center text-sm text-gray-600">
-                        {row.starter === false ? <X className="h-4 w-4 text-gray-400 mx-auto" /> : 
-                         row.starter === true ? <Check className="h-4 w-4 text-brand-green mx-auto" /> : row.starter}
+                        {typeof row.starter === "boolean" ? (
+                          row.starter ? (
+                            <Check className="h-4 w-4 text-brand-green mx-auto" />
+                          ) : (
+                            <X className="h-4 w-4 text-gray-400 mx-auto" />
+                          )
+                        ) : (
+                          <span className="text-sm text-gray-600">{row.starter}</span>
+                        )}
                       </td>
                       <td className="px-6 py-4 text-center text-sm text-gray-600 bg-brand-green/5">
-                        {row.growth === false ? <X className="h-4 w-4 text-gray-400 mx-auto" /> : 
-                         row.growth === true ? <Check className="h-4 w-4 text-brand-green mx-auto" /> : row.growth}
+                        {typeof row.growth === "boolean" ? (
+                          row.growth ? (
+                            <Check className="h-4 w-4 text-brand-green mx-auto" />
+                          ) : (
+                            <X className="h-4 w-4 text-gray-400 mx-auto" />
+                          )
+                        ) : (
+                          <span className="text-sm text-gray-600">{row.growth}</span>
+                        )}
                       </td>
                       <td className="px-6 py-4 text-center text-sm text-gray-600">
-                        {row.premium === false ? <X className="h-4 w-4 text-gray-400 mx-auto" /> : 
-                         row.premium === true ? <Check className="h-4 w-4 text-brand-green mx-auto" /> : row.premium}
+                        {typeof row.premium === "boolean" ? (
+                          row.premium ? (
+                            <Check className="h-4 w-4 text-brand-green mx-auto" />
+                          ) : (
+                            <X className="h-4 w-4 text-gray-400 mx-auto" />
+                          )
+                        ) : (
+                          <span className="text-sm text-gray-600">{row.premium}</span>
+                        )}
                       </td>
                       <td className="px-6 py-4 text-center text-sm text-gray-600">
-                        {row.elite === false ? <X className="h-4 w-4 text-gray-400 mx-auto" /> : 
-                         row.elite === true ? <Check className="h-4 w-4 text-brand-green mx-auto" /> : row.elite}
+                        {typeof row.elite === "boolean" ? (
+                          row.elite ? (
+                            <Check className="h-4 w-4 text-brand-green mx-auto" />
+                          ) : (
+                            <X className="h-4 w-4 text-gray-400 mx-auto" />
+                          )
+                        ) : (
+                          <span className="text-sm text-gray-600">{row.elite}</span>
+                        )}
                       </td>
                     </tr>
                   ))}
