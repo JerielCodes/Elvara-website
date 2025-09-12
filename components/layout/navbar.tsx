@@ -67,7 +67,7 @@ export default function Navbar() {
               </Link>
             ))}
             <div className="flex items-center space-x-3">
-              <Button variant="outline" size="sm" asChild>
+              <Button size="sm" className="bg-gray-900 hover:bg-gray-800 text-white" asChild>
                 <Link href="/book">Book a Demo</Link>
               </Button>
               <Button size="sm" asChild>
@@ -115,7 +115,7 @@ export default function Navbar() {
                   </Link>
                 ))}
                 <div className="pt-3 space-y-2">
-                  <Button variant="outline" size="sm" className="w-full" asChild>
+                  <Button size="sm" className="w-full bg-gray-900 hover:bg-gray-800 text-white" asChild>
                     <Link href="/book">Book a Demo</Link>
                   </Button>
                   <Button size="sm" className="w-full" asChild>

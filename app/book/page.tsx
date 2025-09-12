@@ -64,7 +64,7 @@ export default function BookPage() {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
               {demoBenefits.map((benefit, index) => (
-                <Card key={index} className="text-center">
+                <Card key={index} className="text-center bg-white">
                   <CardContent className="p-6">
                     <div className="mb-4 inline-flex items-center justify-center p-3 bg-brand-green/10 rounded-full">
                       {benefit.icon}
@@ -82,7 +82,7 @@ export default function BookPage() {
         <SectionContainer background="gray">
           <AnimatedSection>
             <div className="max-w-4xl mx-auto">
-              <Card className="shadow-lg">
+              <Card className="shadow-lg bg-white">
                 <CardHeader className="text-center">
                   <CardTitle className="text-2xl text-gray-900">Schedule Your Demo</CardTitle>
                   <p className="text-gray-600">
