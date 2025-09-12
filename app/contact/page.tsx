@@ -63,7 +63,7 @@ export default function ContactPage() {
             {/* Contact Form */}
             <div className="lg:col-span-2">
               <AnimatedSection>
-                <Card className="shadow-lg">
+                <Card className="shadow-lg bg-white">
                   <CardHeader>
                     <CardTitle className="text-2xl text-gray-900">
                       Tell us about your business
@@ -93,7 +93,7 @@ export default function ContactPage() {
                   </div>
 
                   {contactInfo.map((item, index) => (
-                    <Card key={index} className="hover:shadow-md transition-shadow">
+                    <Card key={index} className="hover:shadow-md transition-shadow bg-white">
                       <CardContent className="p-4">
                         <div className="flex items-start space-x-3">
                           <div className="p-2 bg-brand-green/10 rounded-lg">
@@ -109,7 +109,7 @@ export default function ContactPage() {
                     </Card>
                   ))}
 
-                  <Card className="bg-brand-green/5 border-brand-green/20">
+                  <Card className="bg-white border-brand-green/20">
                     <CardContent className="p-4">
                       <h3 className="font-semibold text-gray-900 mb-2">
                         Prefer to schedule a call?
