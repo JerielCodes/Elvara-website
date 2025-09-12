@@ -77,7 +77,7 @@ export default function LeadForm({ className = '' }: LeadFormProps) {
           <Input
             id="name"
             {...register('name')}
-            className="mt-1"
+            className="mt-1 bg-gray-100 border-gray-300"
             placeholder="Your full name"
           />
           {errors.name && (
