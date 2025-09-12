@@ -91,7 +91,7 @@ export default function LeadForm({ className = '' }: LeadFormProps) {
             id="email"
             type="email"
             {...register('email')}
-            className="mt-1"
+            className="mt-1 bg-gray-100 border-gray-300"
             placeholder="your@email.com"
           />
           {errors.email && (
@@ -107,7 +107,7 @@ export default function LeadForm({ className = '' }: LeadFormProps) {
             id="phone"
             type="tel"
             {...register('phone')}
-            className="mt-1"
+            className="mt-1 bg-gray-100 border-gray-300"
             placeholder="(555) 123-4567"
           />
           {errors.phone && (
@@ -120,7 +120,7 @@ export default function LeadForm({ className = '' }: LeadFormProps) {
           <Input
             id="company"
             {...register('company')}
-            className="mt-1"
+            className="mt-1 bg-gray-100 border-gray-300"
             placeholder="Your business name"
           />
           {errors.company && (
@@ -134,7 +134,7 @@ export default function LeadForm({ className = '' }: LeadFormProps) {
         <Textarea
           id="message"
           {...register('message')}
-          className="mt-1"
+          className="mt-1 bg-gray-100 border-gray-300"
           rows={4}
           placeholder="Tell us about your business and how we can help you grow..."
         />
