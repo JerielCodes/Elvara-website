@@ -95,7 +95,7 @@ export default function BookPage() {
                   </div>
 
                   {demoFeatures.map((feature, index) => (
-                    <Card key={index} className="hover:shadow-md transition-shadow">
+                    <Card key={index} className="hover:shadow-md transition-shadow bg-gray-50">
                       <CardContent className="p-4">
                         <div className="flex items-start space-x-3">
                           <div className="p-2 bg-brand-green/10 rounded-lg">
